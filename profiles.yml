@@ -1,0 +1,8 @@
+dbt_model_habit:
+  target: dev
+  outputs:
+    dev:
+      type: sqlite
+      database: C:\Users\ozael\OneDrive\Documents\Python Projects\Habit Tracker Pipeline\fitness_tracker.db
+      schema: public
+      threads: 1
