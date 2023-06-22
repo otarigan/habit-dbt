@@ -3,6 +3,11 @@ dbt_model_habit:
   outputs:
     dev:
       type: sqlite
-      database: C:\Users\ozael\OneDrive\Documents\Python Projects\Habit Tracker Pipeline\fitness_tracker.db
-      schema: public
       threads: 1
+      database: 'fitness_tracker.db'
+      schema: 'main'
+      schemas_and_paths:
+        main: 'C:/Users/ozael/OneDrive/Documents/Python Projects/Habit Tracker Pipeline/fitness_tracker.db'
+      schema_directory: 'C:/Users/ozael/OneDrive/Documents/Python Projects/Habit Tracker Pipeline'
+
+
